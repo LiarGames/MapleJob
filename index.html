@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+  <title>메이플스토리 직업 추천 시스템</title>
+</head>
+<body>
+  <header>
+    <h1>메이플스토리 직업추천 시스템</h1>
+  </header>
+  
+  <main>
+    <form id="prefer">
+      <fieldset>
+        <legend>1. 나는</legend>
+        <label><input type="radio" name="type" value="전사"> 전사가 좋다</label><br />
+        <label><input type="radio" name="type" value="마법사"> 마법사가 좋다</label><br />
+        <label><input type="radio" name="type" value="궁수"> 궁수가 좋다</label><br />
+        <label><input type="radio" name="type" value="도적"> 도적이 좋다</label><br />
+        <label><input type="radio" name="type" value="해적"> 해적이 좋다</label><br />
+        <label><input type="radio" name="type" value="상관없음" checked> 상관없음</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. 나는 텔레포트가</legend>
+        <label><input type="radio" name="tel" value="O"> 있어야만 한다</label><br />
+        <label><input type="radio" name="tel" value="X"> 없어야만 한다</label><br />
+        <label><input type="radio" name="tel" value="상관없음" checked> 상관없음</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. 나는 더블점프가</legend>
+        <label><input type="radio" name="jump" value="상관없음" checked> 없어도 된다</label><br />
+        <label><input type="radio" name="jump" value="D"> 더블점프면 충분하다</label><br />
+        <label><input type="radio" name="jump" value="T"> 트리플 점프가 있어야만 한다</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. 나는 </legend>
+        <label><input type="radio" name="per" value="O"> 아무도 안하는 직업이 좋다</label><br />
+        <label><input type="radio" name="per" value="X"> 인구수가 많은 직업이 좋다</label><br />
+        <label><input type="radio" name="per" value="상관없음" checked> 상관없음</label>
+      </fieldset>
+
+
+      <button type="submit">추천 받기</button>
+    </form>
+
+    <div id="result">
+      
+    </div>
+  </main>
+
+  <footer>
+        <p>라이어게임즈 2025/06/17</p>
+  </footer>
+</body>
+</html>
